@@ -12,6 +12,7 @@ html {
 
   font-family: Ubuntu, sans-serif;
   box-sizing: border-box;
+  font: normal 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
@@ -37,12 +38,12 @@ header {
   padding: 0;
 }
 
-.navigation li {
+ul li {
   list-style-type: none;
   width: 100%;
 }
 
-.navigation a {
+ul a {
   color: #6c8fe0;
   display: block;
   text-decoration: none;
@@ -51,12 +52,12 @@ header {
   padding: .75rem;
 }
 
-.navigation a:hover {
+ul a:hover {
   background-color: #6c8fe0;
   color: #fff;
 }
 
-.navigation {
+ul {
   padding: 0;
   margin: 0;
 }
@@ -68,12 +69,12 @@ header {
    line-height: 1.3;
   }
 
-  .navigation li {
+  ul li {
     width: 50%;
     float: left;
   }
 
-  .navigation {
+  ul {
     text-align: center;
   }
 }
@@ -85,7 +86,7 @@ header {
    line-height: 1.4;
   }
 
-  .navigation li {
+  ul li {
     width: 25%;
   }
 }
