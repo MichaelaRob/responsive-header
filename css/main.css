@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
   box-sizing: border-box;
 }
 
@@ -63,6 +63,11 @@ header {
 
 @media only screen and (min-width: 25em) {
 
+  html {
+   font-size: 100%;
+   line-height: 1.3;
+  }
+
   .navigation li {
     width: 50%;
     float: left;
@@ -75,12 +80,22 @@ header {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+   font-size: 110%;
+   line-height: 1.4;
+  }
+
   .navigation li {
     width: 25%;
   }
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
 
   h1,
   nav {
@@ -100,4 +115,11 @@ header {
       float: right;
       width: 60%;
   }
+}
+
+@@media only screen and (min-width: 90em) {
+
+  html {
+   font-size: 130%;
+ }
 }
