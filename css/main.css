@@ -11,6 +11,11 @@ html {
   text-size-adjust: 100%;
 
   font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -19,38 +24,78 @@ body {
 
 h1 {
   color: #fff;
-  text-size: 2rem;
+  font-size: 2rem;
   background-color: #18294f;
   text-align: center;
+  padding: .5em .75em;
+  margin: 0;
 }
 
 header {
   background-color: #18294f;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  list-style-type: none;
+  width: 100%;
+}
+
+.navigation a {
+  color: #6c8fe0;
+  display: block;
+  text-decoration: none;
+  background-color: #18294f;
+  font-size: 1.125rem;
   padding: .75rem;
 }
 
-a {
-  text-decoration: none;
-  color: #6c8fe0;
+.navigation a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
 }
 
-ul {
-  text-align: left;
+.navigation {
+  padding: 0;
+  margin: 0;
 }
 
-li {
-  list-style-type: none;
+@media only screen and (min-width: 25em) {
+  .navigation li {
+    width: 50%;
+    float: left;
+  }
+
+  .navigation {
+    text-align: center;
+  }
 }
 
+@media only screen and (min-width: 38em) {
 
+  .navigation li {
+    width: 25%;
+  }
+}
 
-- *Typefaces:* `Ubuntu`
-- *Text sizes:* `2rem`, `1.125rem`
-- *Colours:* `#fff`, `#18294f`, `#6c8fe0`
-- *Paddings:* `5px`, `.3em 0 .5em`,
-`.5em .75em`, `.75rem`
-- *Margins:* `.9rem`
-- *Standard media query widths:* `25em`,
-`38em`, `60em`, `90em`
-- *Standard text sizes & line heights:* `100%/1.3`,
-`110%/1.4`, `120%/1.5`, `130%/1.5`
+@media only screen and (min-width: 60em) {
+
+  h1,
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  h1 {
+    float: left;
+  }
+  nav {
+    float: right;
+        width: 60%;
+  }
+}
